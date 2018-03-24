@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.amohamady.workshop006.ActivityRadioButton">
+
+
+    <RadioGroup
+        android:id="@+id/myRadio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6">
+
+        <RadioButton
+            android:id="@+id/rbtnAndroid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:text="Android" />
+
+        <RadioButton
+            android:id="@+id/rbtnCPlusPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:text="C++" />
+
+        <RadioButton
+            android:id="@+id/rbtnJava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="JAVA" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnGetRadioValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="getRadioValue"
+        android:text="Get Radio" />
+
+</LinearLayout>
